@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+
+    >
+
+    <Switch
+        android:id="@+id/bluetooth_switch"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="OFF " />
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="Enable Discoverable" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnDiscover"
+        android:text="Discover" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:layout_below="@+id/btnFindUnpairedDevices"
+        android:layout_marginTop="15dp" />
+
+
+
+
+</RelativeLayout>
